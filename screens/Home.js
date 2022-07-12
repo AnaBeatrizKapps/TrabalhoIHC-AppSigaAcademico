@@ -22,6 +22,22 @@ export default function Home({ navigation }) {
             routes: [{ name: "DadosPessoais" }]
         })
     }
+
+    const BtnHome = (props) =>{
+        return(
+            <TouchableOpacity style={styles.boxButtons}>
+                <View style={styles.boxIntern}>
+                    <View style={styles.gapBoxs}>
+                        <Text style={styles.textTitleBox}>{props.title}</Text>
+                        <Text style={styles.textSubtitle}>{props.subtitle}</Text>
+                    </View>
+                    <View>
+                        <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
+                    </View>
+                </View>
+            </TouchableOpacity>
+        );
+    }
     
     return (
         <ScrollView>
@@ -43,101 +59,31 @@ export default function Home({ navigation }) {
             </View>
             
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>MATRICULA</Text>
-                            <Text style={styles.textSubtitle}>Solicitar matriculas em disciplinas</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="MATRICULA" subtitle="Solicitar matriculas em disciplinas" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>NOTA</Text>
-                            <Text style={styles.textSubtitle}>Verificar Notas</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>                  
-                </TouchableOpacity>
+                <BtnHome title="NOTAS" subtitle="Verificar Notas" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>HISTORICO</Text>
-                            <Text style={styles.textSubtitle}>Consultar historico</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="HISTORICO" subtitle="Consultar historico" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>TRANCAMENTO</Text>
-                            <Text style={styles.textSubtitle}>Solicitar Trancamento em disciplinas</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="TRANCAMENTO" subtitle="Solicitar Trancamento em disciplinas" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>BOLSA</Text>
-                            <Text style={styles.textSubtitle}>Consultar bolsas</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="BOLSA" subtitle="Consultar bolsas" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>IRA ACADEMICO</Text>
-                            <Text style={styles.textSubtitle}>Calcular IRA Academico</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="IRA ACADEMICO" subtitle="Calcular IRA Academico" />
             </View>
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.boxButtons}>
-                    <View style={styles.boxIntern}>
-                        <View style={styles.gapBoxs}>
-                            <Text style={styles.textTitleBox}>TRANCAMENTO</Text>
-                            <Text style={styles.textSubtitle}>Solicitar Trancamento de periodo</Text>
-                        </View>
-                        <View>
-                            <Icon name="angle-right" size={40} color="#000" style={styles.iconArrow} /> 
-                        </View>
-                    </View>
-                </TouchableOpacity>
+                <BtnHome title="TRANCAMENTO" subtitle="Solicitar Trancamento de periodo" />
             </View>
 
         </View>
